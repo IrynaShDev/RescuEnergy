@@ -1,0 +1,710 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+1. Mobile
+2. Large Mobile
+3. iPad
+4. large desktop
+5. Other
+*/
+
+/* 1. Mobile responsive css 640px
+------------------------------------------------------------------------------*/
+@media (min-width:1px) and (max-width:640px) {
+
+    /* masterhead-sec */
+    .masterhead-sec{padding: 0;}
+    .masterhead-sec .masterhead-caption{padding: 0 20px;}
+    .masterhead-sec h1{font-size: 29px; line-height: 29px; margin: 0 0 18px 0;}
+    .masterhead-sec p{font-size: 15px; line-height: 20px; margin: 0 0 18px 0;}
+    .masterhead-sec .masterhead-social{margin: 0;}
+    .masterhead-sec .masterhead-btn{max-width: 157px; width: 100%; display: flex; flex-direction: column; margin: 0 auto 20px;}
+    .masterhead-sec .masterhead-btn a{line-height: 35px; padding: 0; margin: 0 0 20px 0;}
+    .masterhead-sec .masterhead-social a{height: 35px; width: 35px;}
+    .masterhead-sec .step-in figure{max-width: 18px;}
+    .scroll-down:before{width: 28px; height: 28px;}
+     
+    /* header */
+    header .right{display: none;}
+    header .logo{margin: 0;}
+    header .logo a{font-size: 22px; font-weight: 500;}
+    header .navbar-toggle{display: block; z-index: 100; cursor: pointer; padding: 10px;}
+    .mobile-nav ul li a{font-size: 20px;}
+    .navbar-toggle .icon-bar{width: 20px;}
+    .mobile-nav .icon-group{padding: 10px;}
+    
+    /* footer */
+    footer{padding: 40px 0;}
+    footer .icon-group{margin: 0 0 30px 0;}
+    footer .icon-linkedin{margin: 0 25px 0 0;}
+    footer .icon-linkedin i{font-size: 20px;}
+    footer .icon-envelipe i{font-size: 20px;}
+
+    /*------------- index page -------------
+    ---------------------------------------*/
+    /* geothermal-sec */
+    .geothermal-sec{padding: 50px 0 0 0;}
+    .geothermal-sec .content{padding: 0 25px;}
+    .geothermal-sec .geothermal-img1{margin: 0 auto 30px; max-width: 80px;}
+    .geothermal-sec h3{font-size: 18px; line-height: 30px; margin: 0 0 10px 0;}
+    .geothermal-sec p{font-size: 15px; line-height: 20px; margin: 0 0 18px 0;}
+    .geothermal-sec .geothermal-img2{max-width: 50px; margin: 15px auto 25px;}
+    .geothermal-sec .btn-découvrez{margin: 0 0 100px;}
+    .geothermal-sec .btn-découvrez a{font-size: 18px; line-height: 22px; padding: 20px;}
+
+    /* why-use-sec */
+    .why-use-sec{padding: 100px 0 0 0;}
+    .why-use-sec .content{padding: 0 25px;}
+    .why-use-sec .why-use-img{max-width: 60px;}
+    .why-use-sec h3{font-size: 18px; line-height: 30px; margin: 0 0 10px 0;}
+    .why-use-sec p{font-size: 15px; line-height: 20px; margin: 0 0 18px 0;}
+    .why-use-sec .btn-Qui{margin: 0 0 90px;}
+    .why-use-sec .btn-Qui a{font-size: 18px; line-height: 22px; padding: 20px;}
+
+    /* benefits-sec */
+    .benefits-sec{padding: 50px 0 0 0;}
+    .benefits-sec h3{font-size: 18px; line-height: 30px; margin: 0 0 10px 0; padding: 0 25px;}
+    .benefits-sec .benefits-group{grid-gap: 30px 15px; grid-template-columns: repeat(2, 1fr); padding: 30px;}
+    .benefits-sec .benefit-img{max-width: 60px; margin-bottom: 15px;}
+    .benefits-sec .benefit-name{font-size: 15px;}
+    .benefits-sec .img-block{padding: 25px 0;}
+    .benefits-sec .cap-img{max-width: 60px;}
+    .benefits-sec .caption-block{padding: 0 25px; padding: 0 0 30px 0;}
+    .benefits-sec .caption-block p{font-size: 15px; line-height: 20px;}
+    .benefits-sec .btn-comme{margin: 0 auto 90px;}
+    .benefits-sec .btn-comme a{font-size: 18px; line-height: 22px; padding: 20px;}
+
+    /* posibility-sec */
+    .posibility-sec{padding: 50px 0 0 0;}
+    .posibility-sec .posibility-img{max-width: 250px; margin-bottom: 15px;}
+    .posibility-sec h3{font-size: 18px; line-height: 30px; margin: 0 0 10px 0;}
+    .posibility-sec p{font-size: 15px; line-height: 20px; margin: 0 0 18px 0;}
+    .posibility-sec .stages-group{display: block; padding: 40px 20px; margin: 0 0 30px 0;}
+    .posibility-sec .stage{max-width: 210px; margin: 0 auto 40px auto; padding: 0;}
+    .posibility-sec .stage:last-child{margin: 0 auto;}
+    .posibility-sec .stage .number{max-width: 50px; line-height: 8px; margin: 0 auto 10px; font-size: 20px;}
+    .posibility-sec .stage .number-line::after{display: none;}
+    .posibility-sec .stage p{font-size: 14px; line-height: 20px;}
+    .posibility-sec .btn-sont{margin: 0 auto 80px;}
+    .posibility-sec .btn-sont a{font-size: 18px; line-height: 22px; padding: 20px;}
+
+    /* contact-sec */
+    .contact-sec{padding: 150px 0 0 0;}
+    .contact-sec .content{padding: 0 25px;}
+    .contact-sec h3{font-size: 18px; line-height: 30px; margin: 0 0 10px 0;}
+    .contact-sec p{font-size: 15px; line-height: 20px; margin: 0 0 18px 0;}
+    .contact-sec .contact-img{max-width: 90px; margin-bottom: 40px;}
+    .contact-sec .btn-contact{margin: 0 auto 80px;}
+    .contact-sec .btn-contact a{font-size: 18px; line-height: 22px; padding: 20px;}
+
+    /* go-top */
+    .go-top{display: none !important;}
+
+    /*---------- géothermie-page -----------
+    ---------------------------------------*/
+
+    /* page-heading */
+    .page-heading{padding: 30px 0;}
+    .page-heading h1{font-size: 29px; line-height: 47px; margin: 0 0 12px 0;}
+    .page-heading p{font-size: 14px; line-height: 20px; margin: 0;}
+
+    /* geothermal-details */
+    .geothermal-details{padding: 30px 0;}
+    .geothermal-details .content{max-width: 700px;}
+    .geothermal-details p{font-size: 14px; line-height: 20px; margin: 0 0 12px 0;}
+    .geothermal-details .geothermal-img{max-width: 80px; margin: 30px auto;}
+     
+    /* geothermal-benefit */
+    .geothermal-benefit .benefit-block{flex-direction: column;}
+    .geothermal-benefit iframe{height: 190px; max-width: 100%;}
+    .geothermal-benefit .caption-block{max-width: 90%; padding: 30px 0; margin: 0;}
+    .geothermal-benefit p{font-size: 14px; margin: 0 0 12px 0;}
+
+    /* geothermal-benefit */
+    .geothermal-benefit{padding: 30px 0;}
+    .geothermal-benefit .img-block{flex-direction: column; margin: 30px 0; }
+    .geothermal-benefit .benefit-img1{max-width: 210px; margin: 0 auto 30px;}
+    .geothermal-benefit .benefit-img2{max-width: 160px;}
+
+    /* surface-energy */
+    .surface-energy{padding: 30px 0;}
+    .surface-energy h5{font-size: 16px; line-height: 22px; margin: 0 0 20px 0;}
+    .surface-energy .surface-img1{max-width: 227px; padding: 0 0 20px 0;}
+    .surface-energy .text-box{max-width: 100%; padding: 20px 30px; margin: 0;}
+    .surface-energy span{font-size: 14px; line-height: 19px; padding: 0; margin: 0 0 14px 0;}
+    .surface-energy p{font-size: 14px; margin: 0 0 12px 0;}
+    .surface-energy p a{font-size: 14px;}
+    .surface-energy .surface-img2{max-width: 245px; margin: 0 auto;}
+
+    /* different-systems */
+    .different-systems{padding: 30px 0;}
+    .different-systems h5{font-size: 16px; line-height: 22px; margin: 0 0 20px 0;}
+    .different-systems .images-group{max-width: 265px;}
+    .different-systems figure{max-width: 120px;}
+
+    /*-------- qui sommes nous page --------
+    ---------------------------------------*/
+
+    /* page-heading */
+    .page-heading h1{font-size: 27px; line-height: 45px; margin: 0 0 14px 15px;}
+    .page-heading p{font-size: 14px; margin: 0 0 0 15px;}
+
+    /* energy-cest-sec */
+    .energy-cest-sec{padding: 0;}
+    .energy-cest-sec .container{flex-direction: column;}
+    .energy-cest-sec .img-block{max-width: 88%;}
+    .energy-cest-sec .caption-block{max-width: 100%; margin: 0; padding: 40px 0 0 0;}
+    .energy-cest-sec .energy-cest-img{width: 82%;}
+    .energy-cest-sec .title{font-size: 16px; line-height: 21px; margin: 0 0 20px 0;}
+    .energy-cest-sec h6{font-size: 14px; line-height: 20px; margin: 0 0 12px 0;}
+    .energy-cest-sec p{font-size: 14px; line-height: 22px; margin: 0 0 40px 0;}
+
+    /* our-team-sec */
+    .our-team-sec .title{font-size: 18px; line-height: 25px; padding: 20px 0;}
+    .our-team-sec .our-team-group{max-width: 282px; grid-gap: 10px;}
+    .our-team-sec figure{max-width: 397px;}
+
+    /* qualifications-sec */
+    .qualifications-sec{padding: 20px 0;}
+    .qualifications-sec .qualifications1{margin: 0 0 20px 0;}
+    .qualifications-sec .qualifications2{max-width: 100%;}
+
+    /* quali-block */
+    .quali-block .img-group{max-width: 100%; grid-gap: 0px;}
+    .quali-block .caption-group{padding: 15px 0;}
+    .quali-block .caption-group p{font-size: 14px; line-height: 20px;}
+    .quali-block .caption-group p:last-child{margin: 0;}
+    .quali-block .caption-group a{font-size: 14px;}
+    .quali-block .caption-group .light a{font-size: 14px; font-weight: 300;}
+
+    /*--------- nos-chantiers-page ----------
+    ---------------------------------------*/
+    /* page-heading */
+    .page-heading h1{font-size: 28px; line-height: 45px; margin: 0 0 12px 0;}
+    .page-heading p{font-size: 14px; margin: 0;}
+
+    /* our-projects-sec */
+    .our-projects-sec .caption{margin: 0 auto 30px auto;}
+    .our-projects-sec .title{font-size: 14px; line-height: 20px; padding: 20px 0;}
+    .our-projects-sec .vinci-img{max-width: 105px;}
+    .our-projects-sec .project{flex-direction: column; margin: 0 auto 80px auto;}
+    .our-projects-sec .project .img-block{max-width: 100%; margin: 0 0 50px 0;}
+    .our-projects-sec .project .img-block figure{max-width: 99%; margin: 0 auto 0 0;}
+    .our-projects-sec .project .caption-block{max-width: 100%;}
+    .our-projects-sec .project h5{font-size: 16px; font-weight: 600; line-height: 22px; margin: 0 0 10px 0;}
+    .our-projects-sec .project span{margin: 0 0 10px 0;}
+    .our-projects-sec .project p{font-size: 14px; line-height: 20px; margin: 0 0 10px 0;}
+    .our-projects-sec .project label{font-size: 14px; line-height: 20px; margin: 0 0 10px 0;}
+
+}
+
+/* Mobile screen 480 to 640px
+------------------------------------------------------------------------------*/
+@media (min-width:480px) and (max-width:640px) {
+
+    /*------------- index page -------------
+    ---------------------------------------*/
+    /* benefits-sec */
+    .benefits-sec .benefits-group{grid-template-columns: repeat(3, 1fr);}
+
+    /*-------- qui sommes nous page --------
+    ---------------------------------------*/
+	
+}
+
+
+/* 2. Large Mobile responsive css 640px
+------------------------------------------------------------------------------*/
+@media (min-width:641px) and (max-width:767px) {
+
+    /* masterhead-sec */
+    .masterhead-sec{padding: 100px 0;}
+    .masterhead-sec .masterhead-caption{padding: 0 40px;}
+    .masterhead-sec h1{font-size: 40px; line-height: 50px; margin: 0 0 25px 0;}
+    .masterhead-sec p{font-size: 16px; line-height: 22px; margin: 0 0 20px 0;}
+    .masterhead-sec .masterhead-social{margin: 0;}
+    .masterhead-sec .masterhead-social a{height: 35px; width: 35px;}
+    
+    /* header */
+    header .right{display: none;}
+    header .navbar-toggle{display: block; z-index: 100; cursor: pointer; padding: 20px 20px;}
+    .mobile-nav ul li a{font-size: 22px; line-height: 24px;}
+
+    /* footer */
+    footer{padding: 40px 0 60px 0;}
+    footer .icon-group{margin: 0 0 40px 0;}
+    footer .icon-linkedin{margin: 0 30px 0 0;}
+    footer .icon-linkedin i{font-size: 25px;}
+    footer .icon-envelipe i{font-size: 25px;}
+    
+    /*------------- index page -------------
+    ---------------------------------------*/
+    /* geothermal-sec */
+    .geothermal-sec{padding: 60px 0 0 0;}
+    .geothermal-sec .content{padding: 0 40px;}
+    .geothermal-sec .geothermal-img1{margin: 0 auto 35px; max-width: 100px;}
+    .geothermal-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .geothermal-sec p{font-size: 16px; line-height: 22px; margin: 0 0 20px 0;}
+    .geothermal-sec .geothermal-img2{max-width: 60px; margin: 20px auto 40px;}
+    .geothermal-sec .btn-découvrez{margin: 0 0 100px;}
+    .geothermal-sec .btn-découvrez a{font-size: 20px; line-height: 26px; padding: 24px;}
+
+    /* why-use-sec */
+    .why-use-sec{padding: 140px 0 0 0;}
+    .why-use-sec .content{padding: 0 40px;}
+    .why-use-sec .why-use-img{max-width: 60px;}
+    .why-use-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .why-use-sec p{font-size: 16px; line-height: 22px; margin: 0 0 20px 0;}
+    .why-use-sec .btn-Qui{margin: 0 0 100px;}
+    .why-use-sec .btn-Qui a{font-size: 20px; line-height: 26px; padding: 24px;}
+
+    /* benefits-sec */
+    .benefits-sec{padding: 50px 0 0 0;}
+    .benefits-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .benefits-sec .benefits-group{grid-gap: 30px 15px; grid-template-columns: repeat(3, 1fr); padding: 40px;}
+    .benefits-sec .benefit-img{max-width: 60px; margin-bottom: 15px;}
+    .benefits-sec .benefit-name{font-size: 16px;}
+    .benefits-sec .img-block{padding: 25px 0;}
+    .benefits-sec .cap-img{max-width: 60px;}
+    .benefits-sec .caption-block{padding: 0 40px; padding: 0 0 30px 0;}
+    .benefits-sec .caption-block p{font-size: 16px; line-height: 22px;}
+    .benefits-sec .btn-comme{margin: 0 auto 100px;}
+    .benefits-sec .btn-comme a{font-size: 20px; line-height: 26px; padding: 24px;}
+
+    /* posibility-sec */
+    .posibility-sec{padding: 60px 0 0 0;}
+    .posibility-sec .posibility-img{max-width: 300px; margin-bottom: 15px;}
+    .posibility-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .posibility-sec p{font-size: 16px; line-height: 22px; margin: 0 0 25px 0;}
+    .posibility-sec .stages-group{padding: 40px 20px; margin: 0 0 40px 0;}
+    .posibility-sec .stage .number{max-width: 50px; line-height: 8px; margin: 0 auto 40px; font-size: 20px;}
+    .posibility-sec .stage .number-line::after{max-width: 100px;}
+    .posibility-sec .stage p{font-size: 14px; line-height: 20px;}
+    .posibility-sec .btn-sont{margin: 0 auto 100px;}
+    .posibility-sec .btn-sont a{font-size: 20px; line-height: 26px; padding: 28px;}
+
+    /* contact-sec */
+    .contact-sec{padding: 200px 0 0 0;}
+    .contact-sec .content{padding: 0 40px;}
+    .contact-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .contact-sec p{font-size: 16px; line-height: 22px; margin: 0 0 25px 0;}
+    .contact-sec .contact-img{max-width: 100px; margin-bottom: 50px;}
+    .contact-sec .btn-contact{margin: 0 auto 100px;}
+    .contact-sec .btn-contact a{font-size: 20px; line-height: 26px; padding: 28px;}
+
+    /* go-top */
+    .go-top{display: none !important;}
+
+    /*---------- géothermie-page -----------
+    ---------------------------------------*/
+    /* page-heading */
+    .page-heading{padding: 35px 0; }
+    .page-heading h1{font-size: 36px; line-height: 56px; margin: 0 0 14px 0;}
+    .page-heading p{font-size: 17px; line-height: 24px; margin: 0;}
+
+    /* geothermal-details */
+    .geothermal-details{padding: 35px 0;}
+    .geothermal-details .content{max-width: 700px;}
+    .geothermal-details p{font-size: 18px; margin: 0 0 14px 0;}
+    .geothermal-details .geothermal-img{max-width: 128px;}
+     
+    /* geothermal-benefit */
+    .geothermal-benefit iframe{height: 150px; max-width: 100%;}
+    .geothermal-benefit .caption-block{max-width: 55%; padding: 30px 0; margin: 0 0 0 20px;}
+    .geothermal-benefit p{font-size: 16px; margin: 0 0 14px 0;}
+
+    /* geothermal-benefit */
+    .geothermal-benefit{padding: 35px 0;}
+    .geothermal-benefit .img-block{margin: 30px 0;}
+    .geothermal-benefit .benefit-img1{max-width: 170px;}
+    .geothermal-benefit .benefit-img2{max-width: 170px;}
+
+    /* surface-energy */
+    .surface-energy{padding: 35px 0;}
+    .surface-energy h5{font-size: 30px; line-height: 36px; margin: 0 0 30px 0;}
+    .surface-energy .surface-img1{max-width: 416px; padding: 0 0 20px 0;}
+    .surface-energy .text-box{max-width: 100%; padding: 20px 30px; margin: 0;}
+    .surface-energy span{line-height: 20px; padding: 0; margin: 0 0 14px 0;}
+    .surface-energy p{font-size: 16px; margin: 0 0 14px 0;}
+    .surface-energy .surface-img2{max-width: 448px; margin: 0 auto;}
+
+    /* different-systems */
+    .different-systems{padding: 35px 0;}
+    .different-systems h5{font-size: 30px; line-height: 36px; margin: 0 0 10px 0;}
+    .different-systems .images-group{max-width: 400px;}
+    .different-systems figure{max-width: 188px;}
+
+    /*-------- qui sommes nous page --------
+    ---------------------------------------*/
+
+    /* page-heading */
+    .page-heading h1{font-size: 34px; line-height: 50px; margin: 0 40px 14px 40px;}
+    .page-heading p{font-size: 16px; margin: 0 0 0 40px;}
+
+    /* energy-cest-sec */
+    .energy-cest-sec{padding: 0;}
+    .energy-cest-sec .img-block{max-width: 50%;}
+    .energy-cest-sec .caption-block{max-width: 50%; margin: 0; padding: 40px 0 0 0;}
+    .energy-cest-sec .energy-cest-img{width: 82%;}
+    .energy-cest-sec .title{font-size: 28px; line-height: 40px; margin: 0 0 25px 0;}
+    .energy-cest-sec h6{font-size: 16px; line-height: 24px;}
+    .energy-cest-sec p{font-size: 16px; line-height: 27px; margin: 0 0 40px 0;}
+
+    /* our-team-sec */
+    .our-team-sec .title{font-size: 28px; line-height: 40px; padding: 25px 0;}
+    .our-team-sec .our-team-group{max-width: 519px; grid-gap: 15px;}
+    .our-team-sec figure{max-width: 397px;}
+
+    /* qualifications-sec */
+    .qualifications-sec{padding: 20px 0;}
+    .qualifications-sec .qualifications2{max-width: 100%;}
+
+    /* quali-block */
+    .quali-block .img-group{max-width: 100%; grid-gap: 0px;}
+    .quali-block .caption-group{padding: 20px 15px;}
+    .quali-block .caption-group p{font-size: 16px; line-height: 23px;}
+    .quali-block .caption-group p:last-child{margin: 0;}
+    .quali-block .caption-group a{font-size: 16px;}
+    .quali-block .caption-group .light a{font-size: 16px; font-weight: 300;}
+
+    /*--------- nos-chantiers-page ----------
+    ---------------------------------------*/
+    /* page-heading */
+    .page-heading h1{font-size: 34px; line-height: 50px; margin: 0 0 14px 30px;}
+    .page-heading p{font-size: 16px; margin: 0 0 0 30px;}
+
+    /* our-projects-sec */
+    .our-projects-sec .title{font-size: 16px; line-height: 24px; padding: 20px 0;}
+    .our-projects-sec .vinci-img{max-width: 192px;}
+    .our-projects-sec .project{align-items: flex-start; margin: 0 0 80px 0;}
+    .our-projects-sec .project .img-block{max-width: 51%;}
+    .our-projects-sec .project .img-block figure{max-width: 99%; margin: 0 auto 0 0;}
+    .our-projects-sec .project h5{font-size: 25px; font-weight: 600; line-height: 32px; margin: 0 0 14px 0;}
+    .our-projects-sec .project span{margin: 0 0 14px 0;}
+    .our-projects-sec .project p{font-size: 16px; line-height: 27px; margin: 0 0 14px 0;}
+    .our-projects-sec .project label{font-size: 15px; margin: 0 0 14px 0;}
+
+}
+
+/* 3. iPad responsive css 768px to 1023px
+------------------------------------------------------------------------------*/
+@media (min-width:768px) and (max-width:1023px) {
+
+    /* masterhead-sec */
+    .masterhead-sec{padding: 100px 0;}
+    .masterhead-sec .masterhead-caption{padding: 0 50px;}
+    .masterhead-sec h1{font-size: 65px; line-height: 65px; margin: 0 0 30px 0;}
+    .masterhead-sec p{font-size: 15px; line-height: 20px; margin: 0 0 20px 0;}
+    .masterhead-sec .masterhead-social{margin: 0;}
+
+    /* header */
+    header .right{display: none;}
+    header .navbar-toggle{display: block; z-index: 100; cursor: pointer; padding: 20px 20px;}
+    
+    /* footer */
+    footer{padding: 40px 0 60px 0;}
+    footer .icon-group{margin: 0 0 40px 0;}
+    footer .icon-linkedin{margin: 0 30px 0 0;}
+    footer .icon-linkedin i{font-size: 25px;}
+    footer .icon-envelipe i{font-size: 25px;}
+    
+    /*------------- index page -------------
+    ---------------------------------------*/
+    
+    /* geothermal-sec */
+    .geothermal-sec{padding: 60px 0 0 0;}
+    .geothermal-sec .content{padding: 0 50px;}
+    .geothermal-sec .geothermal-img1{margin: 0 auto 40px; max-width: 120px;}
+    .geothermal-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .geothermal-sec p{font-size: 16px; line-height: 20px; margin: 0 0 20px 0;}
+    .geothermal-sec .geothermal-img2{max-width: 60px; margin: 20px auto 40px;}
+    .geothermal-sec .btn-découvrez{margin: 0 0 100px;}
+    .geothermal-sec .btn-découvrez a{font-size: 20px; line-height: 26px; padding: 24px;}
+
+    /* why-use-sec */
+    .why-use-sec{padding: 140px 0 0 0;}
+    .why-use-sec .content{padding: 0 50px;}
+    .why-use-sec .why-use-img{max-width: 60px;}
+    .why-use-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .why-use-sec p{font-size: 16px; line-height: 20px; margin: 0 0 20px 0;}
+    .why-use-sec .btn-Qui{margin: 0 0 100px;}
+    .why-use-sec .btn-Qui a{font-size: 20px; line-height: 26px; padding: 24px;}
+
+    /* benefits-sec */
+    .benefits-sec{padding: 50px 0 0 0;}
+    .benefits-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .benefits-sec .benefits-group{grid-gap: 30px 15px; padding: 40px 50px 30px 50px;}
+    .benefits-sec .benefit-img{max-width: 80px; margin-bottom: 15px;}
+    .benefits-sec .benefit-name{font-size: 18px;}
+    .benefits-sec .img-block{padding: 25px 0;}
+    .benefits-sec .cap-img{max-width: 60px;}
+    .benefits-sec .caption-block{padding: 0 50px; padding: 0 0 30px 0;}
+    .benefits-sec .caption-block p{font-size: 16px; line-height: 20px;}
+    .benefits-sec .btn-comme{margin: 0 auto 100px;}
+    .benefits-sec .btn-comme a{font-size: 20px; line-height: 26px; padding: 24px;}
+
+    /* posibility-sec */
+    .posibility-sec{padding: 60px 0 0 0;}
+    .posibility-sec .posibility-img{max-width: 300px; margin-bottom: 15px;}
+    .posibility-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .posibility-sec p{font-size: 16px; line-height: 20px; margin: 0 0 25px 0;}
+    .posibility-sec .stages-group{padding: 40px 20px; margin: 0 0 40px 0;}
+    .posibility-sec .stage .number{max-width: 50px; line-height: 8px; margin: 0 auto 40px; font-size: 20px;}
+    .posibility-sec .stage .number-line::after{max-width: 130px;}
+    .posibility-sec .stage p{font-size: 15px; line-height: 20px;}
+    .posibility-sec .btn-sont{margin: 0 auto 100px;}
+    .posibility-sec .btn-sont a{font-size: 20px; line-height: 26px; padding: 28px;}
+
+    /* contact-sec */
+    .contact-sec{padding: 200px 0 0 0;}
+    .contact-sec .content{padding: 0 50px;}
+    .contact-sec h3{font-size: 20px; line-height: 34px; margin: 0 0 10px 0;}
+    .contact-sec p{font-size: 16px; line-height: 20px; margin: 0 0 25px 0;}
+    .contact-sec .contact-img{max-width: 100px; margin-bottom: 50px;}
+    .contact-sec .btn-contact{margin: 0 auto 100px;}
+    .contact-sec .btn-contact a{font-size: 20px; line-height: 26px; padding: 28px;}
+
+    /* go-top */
+    .go-top{display: none !important;}
+
+    /*---------- géothermie-page -----------
+    ---------------------------------------*/
+
+    /* page-heading */
+    .page-heading{padding: 40px 0; }
+    .page-heading h1{font-size: 36px; line-height: 56px; margin: 0 0 14px 0;}
+    .page-heading p{font-size: 17px; line-height: 24px; margin: 0;}
+
+    /* geothermal-details */
+    .geothermal-details{padding: 40px 0;}
+    .geothermal-details .content{max-width: 700px;}
+    .geothermal-details p{font-size: 18px; margin: 0 0 14px 0;}
+    .geothermal-details .geothermal-img{max-width: 153px;}
+     
+    /* geothermal-benefit */
+    .geothermal-benefit iframe{height: 185px; max-width: 100%;}
+    .geothermal-benefit .caption-block{max-width: 55%; padding: 40px 0; margin: 0 0 0 20px;}
+    .geothermal-benefit p{font-size: 14px;}
+
+    /* geothermal-benefit */
+    .geothermal-benefit .benefit-img1{max-width: 200px;}
+    .geothermal-benefit .benefit-img2{max-width: 200px;}
+
+    /* surface-energy */
+    .surface-energy h5{font-size: 30px; line-height: 36px;}
+    .surface-energy .surface-img1{max-width: 500px;}
+    .surface-energy .text-box{max-width: 100%; margin: 0;}
+    .surface-energy span{line-height: 20px; padding: 0; margin: 0 0 14px 0;}
+    .surface-energy p{font-size: 16px; margin: 0 0 14px 0;}
+    .surface-energy .surface-img2{max-width: 540px; margin: 0 auto;}
+
+    /* different-systems */
+    .different-systems h5{font-size: 30px; line-height: 36px;}
+    .different-systems .images-group{max-width: 475px;}
+    .different-systems figure{max-width: 225px;}
+
+    /*-------- qui sommes nous page --------
+    ---------------------------------------*/
+    /* page-heading */
+    .page-heading h1{font-size: 34px; line-height: 50px; margin: 0 40px 14px 40px;}
+    .page-heading p{font-size: 16px; margin: 0 0 0 40px;}
+
+    /* energy-cest-sec */
+    .energy-cest-sec{padding: 0;}
+    .energy-cest-sec .img-block{max-width: 50%;}
+    .energy-cest-sec .caption-block{max-width: 50%; margin: 0; padding: 40px 2% 0 2%;}
+    .energy-cest-sec .energy-cest-img{width: 82%;}
+    .energy-cest-sec .title{font-size: 28px; line-height: 40px;}
+    .energy-cest-sec h6{font-size: 17px; line-height: 24px;}
+    .energy-cest-sec p{font-size: 15px; line-height: 30px;}
+
+    /* our-team-sec */
+    .our-team-sec .title{font-size: 28px; line-height: 40px; padding: 25px 0;}
+    .our-team-sec .our-team-group{max-width: 621px; grid-gap: 15px;}
+    .our-team-sec figure{max-width: 397px;}
+
+    /* qualifications-sec */
+    .qualifications-sec{padding: 20px 0;}
+    .qualifications-sec .qualifications2{max-width: 100%;}
+
+    /* quali-block */
+    .quali-block .img-group{max-width: 100%; grid-gap: 0px;}
+    .quali-block .caption-group{padding: 20px 40px;}
+    .quali-block .caption-group p{font-size: 16px; line-height: 23px;}
+    .quali-block .caption-group p:last-child{margin: 0;}
+    .quali-block .caption-group a{font-size: 16px;}
+    .quali-block .caption-group .light a{font-size: 16px; font-weight: 300;}
+
+    /*--------- nos-chantiers-page ----------
+    ---------------------------------------*/
+    /* page-heading */
+    .page-heading h1{font-size: 34px; line-height: 50px; margin: 0 40px 14px 40px;}
+    .page-heading p{font-size: 16px; margin: 0 0 0 40px;}
+
+    /* our-projects-sec */
+    .our-projects-sec .title{font-size: 16px; line-height: 24px;}
+    .our-projects-sec .vinci-img{max-width: 230px;}
+    .our-projects-sec .project{align-items: flex-start; margin: 0 0 80px 0;}
+    .our-projects-sec .project .img-block{max-width: 51%;}
+    .our-projects-sec .project .img-block figure{max-width: 99%; margin: 0 auto 0 0;}
+    .our-projects-sec .project h5{font-size: 28px; font-weight: 600; line-height: 35px; margin: 0 0 14px 0;}
+    .our-projects-sec .project span{margin: 0 0 14px 0;}
+    .our-projects-sec .project p{font-size: 20px; margin: 0 0 14px 0;}
+    .our-projects-sec .project label{font-size: 16px; margin: 0 0 14px 0;}
+}
+
+/* screen 940px to 1023px */
+@media (min-width:940px) and (max-width:1023px) {
+
+}
+
+/* 4. large desktop responsive css 1024px to 1199px
+------------------------------------------------------------------------------*/
+@media (min-width:1024px) and (max-width:1199px) {
+
+	/* masterhead-sec */
+    .masterhead-sec{padding: 120px 0;}
+    .masterhead-sec h1{font-size: 70px; line-height: 70px; margin: 0 0 35px 0;}
+    .masterhead-sec p{font-size: 18px; line-height: 22px; margin: 0 0 25px 0;}
+
+    /* header */
+    header .right{max-width: 80%;}
+
+    /* footer */
+    footer{padding: 40px 0 60px 0;}
+    footer .icon-group{margin: 0 0 40px 0;}
+    footer .icon-linkedin{margin: 0 30px 0 0;}
+    footer .icon-linkedin i{font-size: 25px;}
+    footer .icon-envelipe i{font-size: 25px;}
+    
+    /*------------- index page -------------
+    ---------------------------------------*/
+    /* geothermal-sec */
+    .geothermal-sec{padding: 130px 0 0 0;}
+    .geothermal-sec .content{max-width: 770px;}
+    .geothermal-sec .geothermal-img1{margin: 0 auto 50px auto;}
+    .geothermal-sec h3{font-size: 24px; line-height: 40px; margin: 0 0 15px 0;}
+    .geothermal-sec p{font-size: 18px; line-height: 22px; margin: 0 0 25px 0;}
+    .geothermal-sec .geothermal-img2{max-width: 80px;}
+    .geothermal-sec .btn-découvrez{margin: 0 0 130px;}
+    .geothermal-sec .btn-découvrez a{font-size: 22px; line-height: 30px; padding: 28px;}
+
+    /* why-use-sec */
+    .why-use-sec{padding: 170px 0 0 0;}
+    .why-use-sec .content{max-width: 770px;}
+    .why-use-sec .why-use-img{max-width: 80px;}
+    .why-use-sec h3{font-size: 24px; line-height: 40px; margin: 0 0 15px 0;}
+    .why-use-sec p{font-size: 18px; line-height: 22px; margin: 0 0 25px 0;}
+    .why-use-sec .btn-Qui{margin: 0 0 130px;}
+    .why-use-sec .btn-Qui a{font-size: 22px; line-height: 30px; padding: 28px;}
+
+    /* benefits-sec */
+    .benefits-sec{padding: 70px 0 0 0;}
+    .benefits-sec h3{font-size: 24px; line-height: 40px; margin: 0 0 15px 0;}
+    .benefits-sec .benefits-group{max-width: 800px; grid-gap: 40px 20px; padding: 60px 0 45px 0;}
+    .benefits-sec .benefit-img{max-width: 100px; margin-bottom: 20px;}
+    .benefits-sec .benefit-name{font-size: 20px;}
+    .benefits-sec .img-block{padding: 40px 0;}
+    .benefits-sec .cap-img{max-width: 80px;}
+    .benefits-sec .caption-block{max-width: 770px; padding: 0 0 40px 0;}
+    .benefits-sec .caption-block p{font-size: 18px; line-height: 22px;}
+    .benefits-sec .btn-comme{margin: 0 auto 130px;}
+    .benefits-sec .btn-comme a{font-size: 22px; line-height: 30px; padding: 28px 70px;}
+
+    /* posibility-sec */
+    .posibility-sec{padding: 80px 0 0 0;}
+    .posibility-sec .posibility-img{max-width: 360px; margin-bottom: 15px;}
+    .posibility-sec h3{font-size: 24px; line-height: 40px; margin: 0 0 15px 0;}
+    .posibility-sec p{font-size: 18px; line-height: 22px; margin: 0 0 40px 0;}
+    .posibility-sec .stages-group{padding: 50px 20px; margin: 0 0 40px 0;}
+    .posibility-sec .stage .number{max-width: 60px; line-height: 18px; margin: 0 auto 45px; font-size: 24px;}
+    .posibility-sec .stage .number-line::after{max-width: 180px;}
+    .posibility-sec .stage p{font-size: 20px; line-height: 22px;}
+    .posibility-sec .btn-sont{margin: 0 auto 130px;}
+    .posibility-sec .btn-sont a{font-size: 22px; line-height: 30px; padding: 28px 70px;}
+
+    /* contact-sec */
+    .contact-sec{padding: 220px 0 0 0;}
+    .contact-sec h3{font-size: 24px; line-height: 40px; margin: 0 0 15px 0;}
+    .contact-sec p{font-size: 18px; line-height: 22px; margin: 0 0 40px 0;}
+    .contact-sec .contact-img{max-width: 120px; margin-bottom: 60px;}
+    .contact-sec .btn-contact{margin: 0 auto 130px;}
+    .contact-sec .btn-contact a{font-size: 22px; line-height: 30px; padding: 28px 70px;}
+
+    /*---------- géothermie-page -----------
+    ---------------------------------------*/
+    /* geothermal-details */
+    .geothermal-details p{font-size: 18px;}
+    .geothermal-details .geothermal-img{max-width: 200px;}
+     
+    /* geothermal-benefit */
+    .geothermal-benefit iframe{height: 225px; max-width: 100%;}
+    .geothermal-benefit .caption-block{max-width: 58%; margin: 0 0 0 10px;}
+    .geothermal-benefit p{font-size: 16px;}
+
+    /* geothermal-benefit */
+    .geothermal-benefit .benefit-img1{max-width: 266px;}
+    .geothermal-benefit .benefit-img2{max-width: 266px;}
+
+    /* surface-energy */
+    .surface-energy h5{font-size: 30px;}
+    .surface-energy .surface-img1{max-width: 652px;}
+    .surface-energy .text-box{max-width: 700px; margin: 0 auto 0 0;}
+    .surface-energy p{font-size: 16px;}
+    .surface-energy .surface-img2{max-width: 700px; margin: 0 auto;}
+
+    /* different-systems */
+    .different-systems .images-group{max-width: 630px;}
+    .different-systems figure{max-width: 297px;}
+
+    /*-------- qui sommes nous page --------
+    ---------------------------------------*/
+    /* energy-cest-sec */
+    .energy-cest-sec .img-block{max-width: 50%;}
+    .energy-cest-sec .caption-block{max-width: 50%;}
+    .energy-cest-sec .energy-cest-img{width: 89%;}
+    .energy-cest-sec .title{font-size: 28px; line-height: 40px;}
+    .energy-cest-sec h6{font-size: 18px; line-height: 26px;}
+    .energy-cest-sec p{font-size: 15px; line-height: 30px;}
+
+    /* our-team-sec */
+    .our-team-sec .our-team-group{max-width: 824px; grid-gap: 15px;}
+    .our-team-sec figure{max-width: 397px;}
+
+    /* qualifications-sec */
+    .qualifications-sec{padding: 20px 0;}
+    .qualifications-sec .qualifications2{max-width: 95%;}
+
+    /* quali-block */
+    .quali-block .img-group{max-width: 100%; grid-gap: 0px;}
+    .quali-block .caption-group{padding: 30px 0;}
+
+    /*--------- nos-chantiers-page ----------
+    ---------------------------------------*/
+    /* our-projects-sec */
+    .our-projects-sec .title{font-size: 18px;}
+    .our-projects-sec .vinci-img{max-width: 301px;}
+    .our-projects-sec .project .img-block{max-width: 51%;}
+    .our-projects-sec .project .img-block figure{max-width: 99%; margin: 0 auto 0 0;}
+    .our-projects-sec .project h5{font-size: 28px; font-weight: 600; line-height: 40px;}
+    .our-projects-sec .project{align-items: flex-start; margin: 0 0 80px 0;}
+    .our-projects-sec .project p{font-size: 20px;}
+    .our-projects-sec .project label{font-size: 16px;}
+
+}
+
+
+
+/* 5. Other media-query
+------------------------------------------------------------------------------*/
+@media screen and (max-width: 1023px) {
+
+}
+
+@media (min-width: 1px) and (max-width: 767px) {}
+
+@media (min-width:1200px) and (max-width:1400px) {}
+
+@media (min-width:1401px) and (max-width:1600px) {}
