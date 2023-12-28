@@ -16,12 +16,12 @@
 
     /* masterhead-sec */
     .masterhead-sec{padding: 0;}
-    .masterhead-sec .masterhead-caption{padding: 0 20px;}
+    .masterhead-sec .masterhead-caption{padding: 500px 20px 0 20px;}
     .masterhead-sec h1{font-size: 29px; line-height: 29px; margin: 0 0 18px 0;}
     .masterhead-sec p{font-size: 15px; line-height: 20px; margin: 0 0 18px 0;}
     .masterhead-sec .masterhead-social{margin: 0;}
     .masterhead-sec .masterhead-btn{max-width: 157px; width: 100%; display: flex; flex-direction: column; margin: 0 auto 20px;}
-    .masterhead-sec .masterhead-btn a{line-height: 35px; padding: 0; margin: 0 0 20px 0;}
+    .masterhead-sec .masterhead-btn a{line-height: 35px; padding: 0; margin: 0 0 10px 0;}
     .masterhead-sec .masterhead-social a{height: 35px; width: 35px;}
     .masterhead-sec .step-in figure{max-width: 18px;}
     .scroll-down:before{width: 28px; height: 28px;}
@@ -34,14 +34,23 @@
     .mobile-nav ul li a{font-size: 20px;}
     .navbar-toggle .icon-bar{width: 20px;}
     .mobile-nav .icon-group{padding: 10px;}
-    
+    .nav_bottom-line{width: 100%;}
+
+    .values{padding-left: 15px;padding-right: 15px;}
+    .values__grid {grid-template-columns: repeat(1, 1fr);grid-template-rows: repeat(3, 1fr);        
+    }
+    .values__grid-item { width: 100%;}
+
+
     /* footer */
     footer{padding: 40px 0;}
     footer .icon-group{margin: 0 0 30px 0;}
     footer .icon-linkedin{margin: 0 25px 0 0;}
     footer .icon-linkedin i{font-size: 20px;}
     footer .icon-envelipe i{font-size: 20px;}
-
+    .contacts-sec .contents{width: 100%;flex-direction: column;}
+    .contacts-sec .contents .content_left{max-width: 100%;text-align: start;}
+    .contacts-sec .contents .content_right{ max-width: 100%;text-align: center;}
     /*------------- index page -------------
     ---------------------------------------*/
     /* geothermal-sec */
@@ -203,7 +212,30 @@
 /* Mobile screen 480 to 640px
 ------------------------------------------------------------------------------*/
 @media (min-width:480px) and (max-width:640px) {
+    .contacts-sec .contents{        
+         width: 100%; 
+         flex-direction: column;
+    }
+    .contacts-sec .contents .content_left{
+        max-width: 100%;       
+        text-align: start;    
+    }
+    .contacts-sec .contents .content_right{
+        max-width: 90%;       
+        text-align: center;    
+    }
 
+    .values{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .values__grid {        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);        
+    }
+    .values__grid-item {
+        width: 100%;
+    }
     /*------------- index page -------------
     ---------------------------------------*/
     /* benefits-sec */
@@ -221,16 +253,41 @@
 
     /* masterhead-sec */
     .masterhead-sec{padding: 100px 0;}
-    .masterhead-sec .masterhead-caption{padding: 0 40px;}
+    .masterhead-sec .masterhead-caption{padding: 500px 40px 0 40px;}
     .masterhead-sec h1{font-size: 40px; line-height: 50px; margin: 0 0 25px 0;}
     .masterhead-sec p{font-size: 16px; line-height: 22px; margin: 0 0 20px 0;}
-    .masterhead-sec .masterhead-social{margin: 0;}
-    .masterhead-sec .masterhead-social a{height: 35px; width: 35px;}
+    .masterhead-sec .masterhead-social{margin: 0;    }
+    .masterhead-sec .masterhead-social a{
+        border: 1px solid #FFF;
+        transition: transform 0.3s ease-in-out;    
+        position: relative; 
+        background: #272e4db3; 
+        color: #FFFFFF;  
+        height: 60px; 
+        width: 200px; 
+        border-radius: 20px; 
+        margin: 0 10px 0 0;
+    }
     
+
     /* header */
     header .right{display: none;}
     header .navbar-toggle{display: block; z-index: 100; cursor: pointer; padding: 20px 20px;}
     .mobile-nav ul li a{font-size: 22px; line-height: 24px;}
+    .nav_bottom-line{width: 100%; }
+
+    .values{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .values__grid {        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);        
+    }
+    .values__grid-item {
+        width: 100%;
+    }
+
 
     /* footer */
     footer{padding: 40px 0 60px 0;}
@@ -238,7 +295,24 @@
     footer .icon-linkedin{margin: 0 30px 0 0;}
     footer .icon-linkedin i{font-size: 25px;}
     footer .icon-envelipe i{font-size: 25px;}
-    
+    .contacts-sec .contents{
+        /* max-width: 100%; */
+         width: 100%; 
+         flex-direction: column; 
+         /* background-color: aquamarine; */
+         /* margin: 0 auto;  */
+       
+    }
+    .contacts-sec .contents .content_left{
+        max-width: 100%;
+        /* background-color: red; */
+        text-align: start;    
+    }
+    .contacts-sec .contents .content_right{
+        max-width: 90%;
+        /* background-color: red; */
+        text-align: center;    
+    }
     /*------------- index page -------------
     ---------------------------------------*/
     /* geothermal-sec */
@@ -394,7 +468,7 @@
 
     /* masterhead-sec */
     .masterhead-sec{padding: 100px 0;}
-    .masterhead-sec .masterhead-caption{padding: 0 50px;}
+    .masterhead-sec .masterhead-caption{padding: 550px 50px 0 50px;}
     .masterhead-sec h1{font-size: 65px; line-height: 65px; margin: 0 0 30px 0;}
     .masterhead-sec p{font-size: 15px; line-height: 20px; margin: 0 0 20px 0;}
     .masterhead-sec .masterhead-social{margin: 0;}
@@ -402,14 +476,50 @@
     /* header */
     header .right{display: none;}
     header .navbar-toggle{display: block; z-index: 100; cursor: pointer; padding: 20px 20px;}
-    
+    .nav_bottom-line{        
+        width: 100%;
+    }
+
+    .values{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .values__grid {        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);        
+    }
+    .values__grid-item {
+        width: 100%;
+    }
+
+
+
     /* footer */
     footer{padding: 40px 0 60px 0;}
-    footer .icon-group{margin: 0 0 40px 0;}
+    footer .icon-group{        
+        margin: 0 0 40px 0;}
     footer .icon-linkedin{margin: 0 30px 0 0;}
     footer .icon-linkedin i{font-size: 25px;}
     footer .icon-envelipe i{font-size: 25px;}
-    
+    .contacts-sec .contents{
+        /* max-width: 100%; */
+         width: 100%; 
+         flex-direction: column; 
+         /* background-color: aquamarine; */
+         /* margin: 0 auto;  */
+       
+    }
+    .contacts-sec .contents .content_left{
+        max-width: 100%;
+        /* background-color: red; */
+        text-align: start;    
+    }
+    .contacts-sec .contents .content_right{
+        max-width: 90%;
+        /* background-color: red; */
+        text-align: center;    
+    }
+
     /*------------- index page -------------
     ---------------------------------------*/
     
@@ -553,11 +663,32 @@
     .our-projects-sec .project span{margin: 0 0 14px 0;}
     .our-projects-sec .project p{font-size: 20px; margin: 0 0 14px 0;}
     .our-projects-sec .project label{font-size: 16px; margin: 0 0 14px 0;}
+
+    .values__grid {
+        grid-template-columns: repeat(1, 1fr);                
+     }
 }
 
 /* screen 940px to 1023px */
 @media (min-width:940px) and (max-width:1023px) {
-
+    .contacts-sec .contents{
+        /* max-width: 100%; */
+         width: 100%; 
+         flex-direction: column; 
+         /* background-color: aquamarine; */
+         /* margin: 0 auto;  */
+       
+    }
+    .contacts-sec .contents .content_left{
+        max-width: 100%;
+        /* background-color: red; */
+        text-align: start;    
+    }
+    .contacts-sec .contents .content_right{
+        max-width: 80%;
+        /* background-color: red; */
+        text-align: center;    
+    }
 }
 
 /* 4. large desktop responsive css 1024px to 1199px
@@ -570,7 +701,22 @@
     .masterhead-sec p{font-size: 18px; line-height: 22px; margin: 0 0 25px 0;}
 
     /* header */
-    header .right{max-width: 80%;}
+    header .right{max-width: 15%;}
+    .nav_bottom-line{        
+        width: 100%;
+    }
+    .values{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .values__grid {        
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);        
+    }
+    .values__grid-item {
+        width: 100%;
+    }
+
 
     /* footer */
     footer{padding: 40px 0 60px 0;}
@@ -578,7 +724,24 @@
     footer .icon-linkedin{margin: 0 30px 0 0;}
     footer .icon-linkedin i{font-size: 25px;}
     footer .icon-envelipe i{font-size: 25px;}
-    
+    .contacts-sec .contents{
+        /* max-width: 100%; */
+         width: 100%; 
+         flex-direction: column; 
+         /* background-color: aquamarine; */
+         /* margin: 0 auto;  */
+       
+    }
+    .contacts-sec .contents .content_left{
+        max-width: 100%;
+        /* background-color: red; */
+        text-align: start;    
+    }
+    .contacts-sec .contents .content_right{
+        max-width: 80%;
+        /* background-color: red; */
+        text-align: center;    
+    }
     /*------------- index page -------------
     ---------------------------------------*/
     /* geothermal-sec */
@@ -700,11 +863,19 @@
 /* 5. Other media-query
 ------------------------------------------------------------------------------*/
 @media screen and (max-width: 1023px) {
-
+   
 }
 
 @media (min-width: 1px) and (max-width: 767px) {}
 
-@media (min-width:1200px) and (max-width:1400px) {}
+@media (min-width:1200px) and (max-width:1400px) {
+    .nav_bottom-line{width: 95%;}
+    .values{padding-left: 15px; padding-right: 15px;    }
+    .values__grid {grid-template-columns: repeat(3, 1fr);grid-template-rows: repeat(3, 1fr);        
+    }
+    .values__grid-item {width: 100%;    }
+}
 
-@media (min-width:1401px) and (max-width:1600px) {}
+@media (min-width:1401px) and (max-width:1600px) {
+    .nav_bottom-line{width: 90%;}
+}
